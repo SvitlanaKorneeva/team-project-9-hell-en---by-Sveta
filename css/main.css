@@ -1,0 +1,85 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  color: #3d3d3d;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container .section {
+  padding: 130px 0;
+}
+
+.container-guarantee {
+  width: 1314px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  /* or 60px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #111518;
+}
+
+.section-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+  color: #3d3d3d;
+}
+
+.separate-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+  color: #ff6b09;
+}
+
+.guarantee-list {
+  background-color: #f1f1f1;
+}
+/*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <title>Заголовок страницы</title>
   </head>
   <body>
@@ -10,6 +11,126 @@
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
 
+    <!-- Секция Мы гарантируем -->
+    <section class="section guarantee">
+      <div class="container-guarantee">
+        <h2 class="title">Мы гарантируем</h2>
+        <ul class="guarantee-list list">
+          <li class="section-text">
+            Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном
+            тестировании. Иначе мы вернем деньги.<span class="separate-text"
+              >*</span
+            >
+          </li>
+          <li>
+            Ты научишься писать сочинения минимум на 10 баллов из 14.
+            <span class="separate-text"
+              >В то время как 20% учеников получили за сочинение 0.</span
+            >
+          </li>
+          <li class="section-text">
+            Ты будешь заниматься в своем районе. Мы выберем место проведения
+            занятий после формирования команд.
+          </li>
+          <li class="section-text">
+            Команды будут сформированы, исходя из начального уровня учеников. Мы
+            учитываем особенности каждого ученика.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Секция Отзывы выпускников -->
+    <section class="section reviews">
+      <div class="container">
+        <h2 class="title">Отзывы выпускников</h2>
+        <div>
+          <h3 class="subtitle">Тоня Кучеровская</h3>
+          <p class="second-text">
+            Выпуск 2015-го года, Національний університет біоресурсів і
+            природокористування України
+          </p>
+        </div>
+        <div class="section-text">
+          За короткий час занять з Оленою я опанувала граматику і поповнила свій
+          зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що
+          знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її
+          справді хвилювала моя успішність. Вона стала для мене авторитетом,
+          проте я не тремтіла на уроках, маючи страх зробити найменшу помилку.
+          Зараз я можу похизуватись тим, що я студен ...
+          <span span class="separate-text">Читать дальше</span>
+        </div>
+        <div class="reviews-list list">
+          <ul class="reviews-list list">
+            <li class="reviews-item">Фото 1</li>
+            <li class="reviews-item">Фото 2</li>
+            <li class="reviews-item">Фото 3</li>
+            <li class="reviews-item">Фото 4</li>
+            <li class="reviews-item">Фото 5</li>
+            <li class="reviews-item">Фото 6</li>
+            <li class="reviews-item">Фото 7</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="section footer">
+        <div class="container">
+          <div class="container registration">
+            <h2 class="registration-tittle">
+              Регистрация на бесплатную телефонную консультацию по нюансам ЗНО
+              по английскому языку
+            </h2>
+            <h3>
+              Оставь заявку на участие в бесплатном занятии. С вами свяжется
+              консультант и ответит на вопросы
+            </h3>
+            <form class="registration-form">
+              <input
+                class="name-field"
+                id="name"
+                type="text"
+                placeholder="Имя*"
+              />
+              <input
+                class="phone-field"
+                id="phone"
+                type="tel"
+                placeholder="Телефон*"
+              />
+            </form>
+            <button type="submit">хочу на бесплатное занятие</button>
+          </div>
+          <address>
+            <ul>
+              <li>
+                <svg class="" width="128px" height="45px">
+                  <use href="./images/icons/sprite.svg#icon-logo"></use>
+                </svg>
+              </li>
+              <li>
+                <a href="tel:380000000000" class="">+38 (000) 000 00 00</a>
+              </li>
+              <li>
+                <a
+                  class=""
+                  href="https://instagram.com"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="" width="40px" height="40px">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <span>@ Все права защищены, 2019</span>
+        </div>
+      </section>
+    </footer>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
