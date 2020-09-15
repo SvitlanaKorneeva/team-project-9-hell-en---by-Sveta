@@ -42,13 +42,9 @@ html {
   //  width: 1680px;
   //  }
   //}
-
-  .section {
-    padding: 130px 0;
-  }
-
-  //@include for-size(tablet-landscape) {
-  // padding: 50px 0;
+}
+.section {
+  margin-bottom: 130px;
 }
 
 .title {
