@@ -86,8 +86,6 @@ html {
   width: 1314px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .guarantee-item {
@@ -99,10 +97,15 @@ html {
   line-height: 28px;
   /* or 140% */
   color: #3d3d3d;
+  padding-left: 40px;
+}
+
+.guarantee-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .list.guarantee-list {
+  position: relative;
   background-color: #f1f1f1;
   padding-top: 50px;
   padding-bottom: 45px;
@@ -112,14 +115,30 @@ html {
 
 .list.guarantee-list :before {
   position: absolute;
+  z-index: 1;
   content: '';
-  left: 0;
-  bottom: 0;
+  left: -10px;
+  bottom: 50%;
   display: block;
-  width: 21.88px;
-  height: 29.99px;
+  width: 22px;
+  height: 30px;
   margin-right: 30px;
   background-image: url("../images/icons/fire.svg");
+}
+
+.list.guarantee-list :after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -16px;
+  display: block;
+  width: 0px;
+  height: 40px;
+  border: 1px dashed #b9b9b9;
+}
+
+.guarantee-item:last-child::after {
+  display: none;
 }
 
 .container-reviews {
