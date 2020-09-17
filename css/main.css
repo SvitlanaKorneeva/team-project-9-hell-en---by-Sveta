@@ -185,7 +185,7 @@ html {
 }
 
 .review-content {
-  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .reviews-subtitle {
@@ -238,12 +238,17 @@ html {
 }
 
 .social-icons-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: turquoise;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  background-color: transparent;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -254,15 +259,8 @@ html {
 
 .social-icons-link:hover, .social-icons-link:focus {
   cursor: pointer;
-  background-color: black;
-  fill: tomato;
-}
-
-.social-icon {
-  fill: tomato;
-  width: 30px;
-  height: 30px;
-  background-color: violet;
+  background-color: #436eab;
+  fill: white;
 }
 
 html {

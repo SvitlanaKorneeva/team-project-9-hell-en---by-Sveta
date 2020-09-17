@@ -39,7 +39,7 @@
 }
 
 .review-content {
-  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .reviews-subtitle {
@@ -87,9 +87,11 @@
   width: 25px;
 }
 .social-icons-link {
-  display: inline-flex;
-  align-content: center;
-  background-color: turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: transparent;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -100,14 +102,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: black;
-    fill: tomato;
+    background-color: #436eab;
+    fill: white;
   }
-}
-
-.social-icon {
-  fill: tomato;
-  width: 30px;
-  height: 30px;
-  background-color: violet;
 }
