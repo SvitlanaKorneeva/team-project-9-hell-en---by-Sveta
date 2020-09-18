@@ -23,6 +23,7 @@
   letter-spacing: 0.03em;
   color: $main-text-color;
   margin-bottom: 30px;
+  margin-top: 0;
 
   @include for-size(desktop) {
     font-size: 46px;
@@ -84,7 +85,7 @@
     z-index: 1;
     content: '';
     left: -10px;
-    bottom: 50%;
+    top: 0;
     display: block;
     width: 15px;
     height: 20px;
@@ -101,7 +102,7 @@
   :after {
     position: absolute;
     content: '';
-    left: 0;
+    left: -4px;
     bottom: -16px;
     display: block;
     width: 0px;
@@ -114,6 +115,7 @@
 
     @include for-size(desktop) {
       height: 40px;
+      left: 0;
     }
   }
 }

@@ -23,6 +23,7 @@
   letter-spacing: 0.03em;
   color: $main-text-color;
   margin-bottom: 20px;
+  margin-top: 0;
 
   @include for-size(tablet-landscape) {
     font-size: 26px;
@@ -38,12 +39,13 @@
   //width: 100%;
   background: $background-white-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-  display: flex;
+  display: inline-block;
 
   padding-top: 20px;
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 20px;
 
   @include for-size(tablet-landscape) {
     display: flex;
@@ -73,6 +75,10 @@
 
 .review-photo {
   margin-bottom: 20px;
+
+  @include for-size(tablet-portrait) {
+    margin: auto;
+  }
 }
 
 .review-content {
@@ -89,6 +95,7 @@
   letter-spacing: 0.08em;
   color: $accent-color;
   margin-bottom: 10px;
+  margin-top: 0;
 
   @include for-size(tablet-landscape) {
     font-size: 20px;
@@ -128,15 +135,61 @@
     margin-bottom: 20px;
   }
 }
-.list .reviews-names {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-}
-.reviews-item {
-  margin-right: 30px;
+
+.review-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: $additional-text-color;
+
+  @include for-size(tablet-landscape) {
+    text-align: start;
+  }
+
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: start;
+  }
 }
 
+.list .reviews-names {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+
+  @include for-size(tablet-landscape) {
+    margin-top: 30px;
+  }
+
+  @include for-size(desktop) {
+    margin-top: 40px;
+  }
+}
+.list.reviews-names .reviews-item:nth-child(n + 4) {
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+}
+
+.reviews-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  @include for-size(tablet-landscape) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @include for-size(desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
 .button-arrow-left {
   display: block;
   //border: 1px solid tomato;
